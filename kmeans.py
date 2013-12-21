@@ -56,7 +56,7 @@ if __name__ == "__main__":
     X = np.loadtxt(datafile)
     # number of K initial centroids
     K = 3
-    # specify number of iterations for kmeans
+    # specify number of iterations for kmeans algorithm
     iters = 10
     # set instance of class kmeans
     output = kmeans(X,K)
