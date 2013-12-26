@@ -31,7 +31,7 @@ class kmeans:
         return idx
 
     def compute_Centroids(self,idx):
-        # initialize centroids
+        # initialize k centroids
         centroids = np.zeros((self.K,self.n))
         for i in range(self.K):
             # determine index for all points corresponding to distinct centroid
