@@ -25,6 +25,7 @@ class logit:
         for i in range(len(self.sigma)):
             # divide by std of column to complete normalization
             X_new[:,i] = X_new[:,i] / self.sigma[i]
+        # do not add scaled values for intercept term
         self.X[:,1:] = X_new[:,1:]
 
     def sigmoid(self,z):
